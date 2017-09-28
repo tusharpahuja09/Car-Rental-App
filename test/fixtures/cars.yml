@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  license: MyString
+  manufac: MyString
+  model: MyString
+  rent_rate: MyString
+  style: MyString
+  location: MyString
+  status: MyString
+
+two:
+  license: MyString
+  manufac: MyString
+  model: MyString
+  rent_rate: MyString
+  style: MyString
+  location: MyString
+  status: MyString
