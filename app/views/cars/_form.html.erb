@@ -33,7 +33,7 @@
 
   <div class="field">
     <%= form.label :style %>
-    <%= form.text_field :style, id: :car_style %>
+    <%= form.select :style, ['Coupe', 'Sedan', 'SUV']%>
   </div>
 
   <div class="field">
@@ -43,7 +43,7 @@
 
   <div class="field">
     <%= form.label :status %>
-    <%= form.text_field :status, id: :car_status %>
+    <%= form.select :status, ['Available', 'Checkedout'] %>
   </div>
 
   <div class="actions">
