@@ -34,6 +34,6 @@
   <strong>Status:</strong>
   <%= @car.status %>
 </p>
-
+<%= link_to 'Reservation', new_car_reservation_path(@car) %></td> |
 <%= link_to 'Edit', edit_car_path(@car) %> |
 <%= link_to 'Back', cars_path %>

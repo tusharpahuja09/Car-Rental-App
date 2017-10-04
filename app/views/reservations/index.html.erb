@@ -18,9 +18,9 @@
         <td><%= reservation.reserve_date %></td>
         <td><%= reservation.checkout_date %></td>
         <td><%= reservation.returndate %></td>
-        <td><%= link_to 'Show', reservation %></td>
-        <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
-        <td><%= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+       <!--<td><= link_to 'Show', reservation %></td>
+        <td><= link_to 'Edit', edit_reservation_path(reservation) %></td>
+        <td><= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Reservation', new_reservation_path %>
+<%= link_to 'New Reservation', new_car_reservation_path %>

@@ -4,7 +4,7 @@ class CreateReservations < ActiveRecord::Migration[5.1]
       t.datetime :reserve_date
       t.datetime :checkout_date
       t.datetime :returndate
-      t.reference :car
+      t.references :car
       t.timestamps null: false
     end
   end
