@@ -28,8 +28,10 @@ ActiveRecord::Schema.define(version: 20170925080122) do
     t.datetime "reserve_date"
     t.datetime "checkout_date"
     t.datetime "returndate"
+    t.integer "car_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["car_id"], name: "index_reservations_on_car_id"
   end
 
   create_table "users", force: :cascade do |t|
