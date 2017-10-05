@@ -355,7 +355,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../toy_app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Review/Review_1/CarRental" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -517,7 +517,7 @@
       <workItem from="1506898441231" duration="6874000" />
       <workItem from="1506909888420" duration="850000" />
       <workItem from="1506911019655" duration="154000" />
-      <workItem from="1506981250299" duration="27092000" />
+      <workItem from="1506981250299" duration="28851000" />
     </task>
     <servers />
   </component>
@@ -527,7 +527,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65154000" />
+    <option name="totallyTimeSpent" value="66913000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
