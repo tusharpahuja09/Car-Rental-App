@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     resources :reservations
   end
   devise_for :users
-  resources :users, :only => [:index, :show]
+  resources :users, :only => [:index, :show, :create, :new]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get '/car_find_display'=> 'cars#display'
   post '/car_find_display' => 'cars#display'

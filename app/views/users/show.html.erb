@@ -1,1 +1,21 @@
-<h1>HI</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Role</strong>
+  <% if @user.user_type == "0" %>
+    User
+      <%end%>
+  <% if @user.user_type == "1" %>
+      Admin
+  <%end%>
+  <% if @user.user_type == "0" %>
+      SuperAdmin
+  <%end%>
+</p>
+
+<%= link_to 'Back', users_path %>
