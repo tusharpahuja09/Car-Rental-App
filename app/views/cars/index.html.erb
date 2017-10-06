@@ -1,8 +1,8 @@
-<%user_id = @userer_id%>
+<%user_id = @user_id%>
 <p id="notice"><%= notice %></p>
 <h1>Find your Car</h1>
 <%=form_tag('/car_find_display'   ,:method => :post, :user_id => user_id) do %>
-    Manufacturer: <%= text_field_tag :manufac, params[:manufac] %>
+    Manufacturer: <%=   text_field_tag :manufac, params[:manufac] %>
     Model: <%= text_field_tag :model, params[:model] %>
     Location: <%= text_field_tag :location, params[:location] %>
     Style: <%= text_field_tag :style, params[:style] %>
@@ -42,6 +42,7 @@
         <% if current_user.user_type == "1" %>
             <td><%= link_to 'Edit', edit_car_path(car) %></td>
             <td><%= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
         <% end %>
 
         <% if current_user.user_type == "2" %>
@@ -57,8 +58,12 @@
 
 <br>
   <% if current_user.user_type == "1" %>
-<%= link_to 'New Car', new_car_path %>
+    <%= link_to 'New Car', new_car_path %>
+    <%= link_to 'USERS', users_path %>
+    <%= link_to 'Create New User', '/users/sign_up'%>
+
  <% end %>
 <% if current_user.user_type == "2" %>
     <%= link_to 'New Car', new_car_path %>
+    <%= link_to 'Create New User', '/users/sign_up'%>
 <% end %>
