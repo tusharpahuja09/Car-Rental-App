@@ -1,5 +1,10 @@
 Hello
-
+Admin id: admin123@gmail.com
+Admin password: admin123
+////////////////////////////////
+Superadmin id: superadmin123@gmail.com
+Superadmin password: superadmin123
+////////////////////////////////
 The app is deployed on Heroku and will work once you open the link of the app
 
 https://quiet-castle-37619.herokuapp.com/
