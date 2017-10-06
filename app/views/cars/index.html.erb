@@ -35,6 +35,11 @@
             <td><%= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
 
+        <% if current_user.user_type == "2" %>
+            <td><%= link_to 'Edit', edit_car_path(car) %></td>
+            <td><%= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+
 
       </tr>
     <% end %>
@@ -42,6 +47,9 @@
 </table>
 
 <br>
-  <% if current_user.user_type == "1" or "2" %>
+  <% if current_user.user_type == "1" %>
 <%= link_to 'New Car', new_car_path %>
  <% end %>
+<% if current_user.user_type == "2" %>
+    <%= link_to 'New Car', new_car_path %>
+<% end %>
