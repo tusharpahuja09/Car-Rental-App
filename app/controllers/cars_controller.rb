@@ -61,6 +61,45 @@ class CarsController < ApplicationController
     end
   end
 
+
+
+  def display
+
+      if params[:user_id]
+        @user_id = params[:user_id]
+      end
+      @cars = Car.all
+      @location = params[:location]
+      @manufac = params[:manufac]
+      @model = params[:model]
+      @style = params[:style]
+      @status = params[:status]
+      @license = params[:license]
+      if(!@location.blank?)
+        @cars = @cars.where(:location => @location)
+      end
+      if(!@manufac.blank?)
+        @cars = @cars.where(:manufac => @manufac)
+      end
+      if(!@model.blank?)
+        @cars = @cars.where(:model => @model)
+      end
+      if(!@style.blank?)
+        @cars = @cars.where(:style => @style)
+      end
+      if(!@status.blank?)
+        @cars = @cars.where(:status => @status)
+      end
+      if(!@status.blank?)
+          @cars = @cars.where(:status => @status)
+
+      end
+      if(!@licnese.blank?)
+        @cars = @cars.where(:lecense => @license)
+
+      end
+      render "index"
+      end
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_car
@@ -71,4 +110,5 @@ class CarsController < ApplicationController
     def car_params
       params.require(:car).permit(:license, :manufac, :model, :rent_rate, :style, :location, :status)
     end
-end
+
+  end

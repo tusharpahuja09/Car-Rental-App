@@ -1,5 +1,14 @@
+<%user_id = @userer_id%>
 <p id="notice"><%= notice %></p>
-
+<h1>Find your Car</h1>
+<%=form_tag('/car_find_display'   ,:method => :post, :user_id => user_id) do %>
+    Manufacturer: <%= text_field_tag :manufac, params[:manufac] %>
+    Model: <%= text_field_tag :model, params[:model] %>
+    Location: <%= text_field_tag :location, params[:location] %>
+    Style: <%= text_field_tag :style, params[:style] %>
+    Status: <%= text_field_tag :status, params[:status] %>
+    <div><%= button_to "Search", :action => "display", :controller => "cars", :user_id => user_id %></div>
+<%end%>
 <h1>Cars</h1>
 
 <table class="table table-striped table-bordered table-hover table-condensed">
