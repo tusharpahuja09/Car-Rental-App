@@ -14,13 +14,12 @@ class UsersController < ApplicationController
   end
 
   def create
+
     @user = User.new(user_params)
-
-    respond_to do |format|
-       @user.save
-
-
+    if @user.save!
+      redirect_to root_path
     end
+
   end
   private
   # Use callbacks to share common setup or constraints between actions.
