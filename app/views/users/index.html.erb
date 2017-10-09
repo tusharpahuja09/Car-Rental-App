@@ -24,6 +24,9 @@
         <% if user.user_type == "2" %>
             <td>SuperAdmin</td>
         <%end%>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
   <% end %>
   </tbody>
