@@ -12,3 +12,5 @@ User.create([{email: 'admin1@gmail.com', password: 'admin345' ,user_type: '1'  }
 User.create([{email: 'admin2@gmail.com', password: 'admin456' ,user_type: '1'  }])
 User.create([{email: 'superadmin1@gmail.com', password: 'superadmin1' ,user_type: '2'  }])
 User.create([{email: 'superadmin2@gmail.com', password: 'superadmin2' ,user_type: '2'  }])
+Suggestion.create([{model: 'Q3', manufac: 'Audi'}])
+Suggestion.create([{model: 'city', manufac: 'Honda'}])
