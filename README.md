@@ -56,12 +56,12 @@ Checked out - when a customer checks out the car or an admin checks out the car 
 Available - otherwise
 View the list of all Cars
 View the attributes of a Car. Also, show the user who has the car if its status is “Checked out” or “Reserved”.
-Edit the attributes of a Car 
+Edit the attributes of a Car.
 An admin can also change the status of a car i.e., she/he can reserve, check out or return a car on behalf of a customer. 
 When an admin reserves, checks out or returns a car on behalf of a customer, the information captured in your database should be the same as if the car was reserved or checked out by a customer..
 An admin can edit a reservation on behalf of a customer.
 View the checkout history of a car.
-Delete a car from the system
+Delete a car from the system.
 Manage customers
 List all customers and profile attributes (except password), with an option to edit a particular customer
 View the checkout history of a customer
@@ -85,8 +85,11 @@ Edit their own profile
 Search cars using location or model or manufacturer or style or status
 search results should be a list of cars matching the search criteria
 View the attributes of a car
+
 Reserve or check out a car if its status is “Available”, and, as part of both operations, specify a return time car.
+
 Return a checked-out car
+
 View their own checkout history
 ------------------------------------------------------
 We have tested the cars controller and model extensively using these cases
